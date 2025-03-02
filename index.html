@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Job Application Prioritizer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        input, select { display: block; margin: 10px 0; padding: 8px; width: 100%; }
+        button { padding: 10px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        ul { margin-top: 20px; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Job Application Prioritizer</h2>
+    <label>Company Name:</label> <input type="text" id="company">
+    <label>Job Title:</label> <input type="text" id="jobTitle">
+    <label>Do you have a referral?</label>
+    <select id="referral">
+        <option value="3">Yes</option>
+        <option value="0">No</option>
+    </select>
+    <label>Effort required?</label>
+    <select id="effort">
+        <option value="1">Low</option>
+        <option value="2">Medium</option>
+        <option value="3">High</option>
+    </select>
+    <label>Interview Stage:</label>
+    <select id="stage">
+        <option value="0">Not Applied</option>
+        <option value="1">Applied</option>
+        <option value="2">Phone Screen</option>
+        <option value="3">Onsite</option>
+        <option value="4">Offer</option>
+    </select>
+    <button onclick="prioritizeJobs()">Prioritize</button>
+    <h3>Ranked Applications:</h3>
+    <ul id="jobList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
