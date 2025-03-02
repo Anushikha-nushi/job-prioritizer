@@ -1,0 +1,8 @@
+{
+  "name": "job-prioritizer",
+  "version": "1.0.0",
+  "description": "AI-powered job prioritization tool",
+  "dependencies": {
+    "openai": "^4.0.0"
+  }
+}
