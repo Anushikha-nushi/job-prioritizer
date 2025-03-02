@@ -6,7 +6,7 @@ function prioritizeJobs() {
     let stage = parseInt(document.getElementById("stage").value);
 
     // Calculate priority score
-    let score = (referral * 3) + (stage * 4) - (effort * 2);
+    let score = 10 + (referral * 3) + (stage * 5) - (effort * 2);
     let result = `${company} - ${jobTitle} (Priority Score: ${score})`;
 
     // Add the job to the ranked list
