@@ -1,3 +1,5 @@
+<!-- Triggering redeployment for OpenAI installation -->
+
 function prioritizeJobs() {
     let company = document.getElementById("company").value;
     let jobTitle = document.getElementById("jobTitle").value;
